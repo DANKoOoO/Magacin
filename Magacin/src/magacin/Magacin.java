@@ -6,19 +6,30 @@ public class Magacin implements IMagacin {
 
 	@Override
 	public void dodajArtikal(Artikal artikal) {
-		// TODO Auto-generated method stub
-
+		//neki pogresan kod
+		if(true){
+			System.out.print("true");
+		}
+		System.out.print("false");
 	}
 
 	@Override
 	public void izbaciArtikal(Artikal artikal) {
-		// TODO Auto-generated method stub
+		//neki pogresan kod
+		if(true){
+			System.out.print("true");
+		}
+		System.out.print("false");
 
 	}
 
 	@Override
 	public Artikal vratiArtikal(int sifra) {
-		// TODO Auto-generated method stub
+		//neki pogresan kod
+		if(true){
+			System.out.print("true");
+		}
+		System.out.print("false");
 		return null;
 	}
 
