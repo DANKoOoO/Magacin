@@ -7,7 +7,7 @@ import interfejs.IMagacin;
 public class Magacin implements IMagacin {
 	
 	private LinkedList<Artikal> artikli = new LinkedList<Artikal>();
-	
+	//metoda dodaje novi artikal ili ako vec postoji povecava kolicinu za onoliko koliko treba
 	@Override
 	public void dodajArtikal(Artikal artikal) {
 
@@ -19,18 +19,18 @@ public class Magacin implements IMagacin {
 			artikli.add(artikal);
 
 	}
-
+	//izbacuje onu kolicinu artikala koja je data iz vec postojece
 	@Override
 	public void izbaciArtikal(Artikal artikal) {
 
 		if(artikli.contains(artikal))
 			for(Artikal a:artikli)
 			if(a==artikal)
-				a.setKolicina(a.getKolicina()-1);
+				a.setKolicina(a.getKolicina()-artikal.getKolicina());
 
 
 	}
-
+	//vraca odabrani artikal
 	@Override
 	public Artikal vratiArtikal(int sifra) {
 
