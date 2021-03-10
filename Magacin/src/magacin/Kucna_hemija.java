@@ -12,5 +12,12 @@ public class Kucna_hemija extends Artikal {
 	public void setRok_trajanja(Date rok_trajanja) {
 		this.rok_trajanja = rok_trajanja;
 	}
+
+	@Override
+	public String toString() {
+		return "Kucna_hemija [rok_trajanja=" + rok_trajanja + "]"+ super.toString();
+	}
+	
+	
 	
 }
